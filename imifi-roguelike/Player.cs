@@ -63,7 +63,7 @@ namespace imifi_roguelike
             if (level == 5 && xp >= 500)
             {
                 level++;
-                xp = 1000;
+                xp = 500;
                 maxhp += 150;
                 hp += 150;
             }

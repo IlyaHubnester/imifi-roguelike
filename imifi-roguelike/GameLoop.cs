@@ -23,6 +23,7 @@ namespace imifi_roguelike
         public Label item_label = new Label();
         public static Label win_label = new Label();
         public static TextBox log = new TextBox();
+        private System.Media.SoundPlayer Player = new System.Media.SoundPlayer();
 
         public GameLoop(ControlCollection controls)
         {
@@ -116,6 +117,8 @@ namespace imifi_roguelike
             player = new Player(32, 400, Controls);
             CreateLabels();
             player.Draw();
+            this.Player.SoundLocation = "music/music.wav";
+            this.Player.PlayLooping();
             while (true)
             {
                 Update();
