@@ -87,7 +87,7 @@ namespace imifi_roguelike
         public const int size_y = 3;
         public const int room_size_x = 10;
         public const int room_size_y = 10;
-        public const string grid_folder = "../../grids/";
+        public const string grid_folder = "grids/";
         public List<string> grids = new List<string>();
         public string name;
         public List<List<Room>> rooms = new List<List<Room>>();

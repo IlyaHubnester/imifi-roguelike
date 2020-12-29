@@ -14,7 +14,7 @@ namespace imifi_roguelike
         ControlCollection Controls;
         public static Stage current_stage;
         public static Player player;
-        public const string tile_path = "../../tiles/";
+        public const string tile_path = "tiles/";
         public static Dictionary<string, Bitmap> bitmaps = new Dictionary<string, Bitmap>();
         public Label hp_label = new Label();
         public Label xp_label = new Label();
@@ -40,18 +40,18 @@ namespace imifi_roguelike
 
         public void CreateLabels()
         {
-            CreateLabel(hp_label, new Point(100, 800));
-            CreateLabel(xp_label, new Point(100, 830));
-            CreateLabel(lvl_label, new Point(100, 860));
-            CreateLabel(weapon_label, new Point(100, 890));
+            CreateLabel(hp_label, new Point(100, 650));
+            CreateLabel(xp_label, new Point(100, 680));
+            CreateLabel(lvl_label, new Point(100, 710));
+            CreateLabel(weapon_label, new Point(100, 740));
             CreateLabel(win_label, new Point(400, 450));
-            CreateLabel(item_label, new Point(100, 920));
+            CreateLabel(item_label, new Point(100, 770));
             win_label.Visible = false;
             win_label.Font = new System.Drawing.Font("Arial", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             log.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             log.ForeColor = System.Drawing.Color.Black;
             log.ScrollBars = ScrollBars.Vertical;
-            log.Location = new Point(500, 800);
+            log.Location = new Point(500, 650);
             log.Size = new System.Drawing.Size(600, 150);
             log.Multiline = true;
             log.ReadOnly = true;
@@ -132,21 +132,6 @@ namespace imifi_roguelike
 
         public void Draw()
         {
-
-            for (int i = 0; i <= Stage.size_y; i++)
-            {
-                for (int j = 0; j <= Stage.size_x; j++)
-                {
-                    foreach (Entity enemy in current_stage.rooms[i][j].enemies)
-                    {
-                        if (!enemy.drawn) 
-                        {
-
-                        }
-                       
-                    }
-                }
-            }
             current_stage.Draw();
         }
 
