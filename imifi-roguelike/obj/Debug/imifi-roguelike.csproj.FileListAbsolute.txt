@@ -1,0 +1,9 @@
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\bin\Debug\imifi-roguelike.exe.config
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\bin\Debug\imifi-roguelike.exe
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\bin\Debug\imifi-roguelike.pdb
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi-roguelike.csprojAssemblyReference.cache
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi_roguelike.Properties.Resources.resources
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi-roguelike.csproj.GenerateResource.cache
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi-roguelike.exe
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi-roguelike.pdb
+C:\Users\Hubnester\source\repos\imifi-roguelike\imifi-roguelike\obj\Debug\imifi_roguelike.Form1.resources
