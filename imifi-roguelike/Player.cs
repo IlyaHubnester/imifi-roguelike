@@ -16,10 +16,10 @@ namespace imifi_roguelike
         public const int max_xp = 1000;
         public int level;
         public List<Weapon> weapon_inventory = new List<Weapon>();
-        public int current_index = 0;
+        public int current_index;
         public int damage_modifier = 0;
         public List<Item> inventory = new List<Item>();
-        public int current_item_index = 0;
+        public int current_item_index;
         public Player(int start_x, int start_y, ControlCollection controls) : base(start_x, start_y, controls, "clown", new Weapon("Кинжал", 10, "Вы втыкаете во врага кинжал, нанося ", true))
         {
             maxhp = 100;
@@ -29,6 +29,8 @@ namespace imifi_roguelike
             damage = weapon.damage * level + damage_modifier;
             visible = true;
             weapon_inventory.Add(weapon);
+            current_index = 0;
+            current_item_index = 0;
         }
 
         public void GainXP(int gained_xp)
@@ -136,25 +138,26 @@ namespace imifi_roguelike
         {
             if(e.KeyCode == Keys.E)
             {
-                if (current_index < weapon_inventory.Count() - 1)
+                if (current_index < weapon_inventory.Count - 1)
                 {
                     current_index++;
                     ChangeWeapon(weapon_inventory[current_index]);
                 }
-                if (current_index == weapon_inventory.Count() - 1)
+                else if (current_index == weapon_inventory.Count - 1)
                 {
                     current_index = 0;
                     ChangeWeapon(weapon_inventory[current_index]);
                 }
+                
             }
 
             if (e.KeyCode == Keys.R)
             {
-                if (current_item_index < inventory.Count() - 1)
+                if (current_item_index < inventory.Count - 1)
                 {
                     current_item_index++;
                 }
-                if (current_item_index == inventory.Count() - 1)
+                else if (current_item_index == inventory.Count - 1)
                 {
                     current_item_index = 0;
                 }
